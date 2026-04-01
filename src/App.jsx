@@ -1,14 +1,14 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 
-// import './App.css'
+import './App.css'
 
-// function App() {
+function App() {
  
-//   return (
-//     <>
-//     <h1>meerali</h1>
-//     </>
-//   )
-// }
+  return (
+    <>
+    <h1>meerali</h1>
+    </>
+  )
+}
 
-// export default App
+export default App
