@@ -1,6 +1,6 @@
 // import Login from "./components/Auth/Login"
-// import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
-import Tasklistnumber from "./Tasklist/Tasklistnumber";
+import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
+import Tasklistnumber from "./Other/Tasklistnumber"
 import './App.css'
 
 function App() {
