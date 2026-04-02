@@ -1,14 +1,15 @@
-import React from 'react'
-import Headaer  from "../../Other/Headaer"
-
+import React from "react";
+import Headaer from "../../Other/Headaer";
 
 const EmployeeDashboard = () => {
   return (
     <>
-    <div>EmployeeDashboard</div>
-    <Headaer/>
+      <div className="p-10 bg-[#1c1c1c] h-screen">
+        {/* EmployeeDashboard */},
+        <Headaer />
+      </div>
     </>
- )
-}
+  );
+};
 
-export default EmployeeDashboard
+export default EmployeeDashboard;
