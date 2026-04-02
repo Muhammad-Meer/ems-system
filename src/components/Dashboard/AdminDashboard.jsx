@@ -13,7 +13,10 @@ const AdminDashboard = () => {
        <h3>Task Title</h3>
        <input type="text" placeholder='enter task' />
 
-       
+
+       <h3>Description</h3>
+       <input type="text" placeholder='Description' />
+
 
       </form>
      </div>
