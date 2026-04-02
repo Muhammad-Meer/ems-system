@@ -1,6 +1,5 @@
 // import Login from "./components/Auth/Login"
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
-import Tasklistnumber from "./Other/Tasklistnumber"
 import './App.css'
 
 function App() {
@@ -8,9 +7,7 @@ function App() {
   return (
     <>
     {/* <Login/> */}
-    {/* rest karo  */}
     <EmployeeDashboard/>
-    <Tasklistnumber/>
     </>
   )
 }
