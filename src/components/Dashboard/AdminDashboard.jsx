@@ -7,7 +7,7 @@ const AdminDashboard = () => {
     <div className='h-screen w-full p-10 '>
      <Headaer/>
 
-     <div>
+     <div className='bg-amber-800'>
       <form>
       
        <h3>Task Title</h3>
@@ -16,7 +16,8 @@ const AdminDashboard = () => {
 
        <h3>Description</h3>
        <input type="text" placeholder='Description' />
-
+      
+      <textarea placeholder='text area' name="" id=""></textarea>
 
       </form>
      </div>
