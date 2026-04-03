@@ -3,7 +3,7 @@ import React from 'react'
 const Headaer = () => {
   return (
     <>
-    <div className='flex items-end justify-between p-6 '>
+    <div className='flex items-end justify-between p-6 bg-gray-700 text-white'>
 
 
     <h1 className='text-2xl font-medium'>Hello <br />

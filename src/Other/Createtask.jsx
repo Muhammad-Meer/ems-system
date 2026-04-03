@@ -1,7 +1,7 @@
 
 const AdminDashboard = () => {
   return (
-    <div className="min-h-screen w-full bg-gray-900 p-8 text-white">
+    <div className="w-full  bg-gray-900 p-8 text-white">
 
       <div className="mt-8 bg-gray-800 p-6 rounded-xl shadow-md">
 

@@ -1,5 +1,6 @@
 import Headaer from "../../Other/Headaer";
 import Createtask from "../../Other/Createtask";
+import ALLtask from "../../Other/ALLtask";
 
 const AdminDashboard = () => {
   return (
@@ -7,7 +8,8 @@ const AdminDashboard = () => {
 
            <Headaer/>
            <Createtask/>
-           
+           <ALLtask/>
+
            </>
   );
 };

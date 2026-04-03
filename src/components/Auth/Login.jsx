@@ -16,9 +16,9 @@ const Login = () => {
   };
   return (
     <>
-      <div className="flex h-screen w-screen items-center justify-center p-25">
+      <div className="flex h-screen w-screen items-center justify-center p-25 bg-gray-900 text-white">
         <div className="border-2 border-emerald-600 p-4">
-          <h1>Login</h1>
+          <h1 className="text-center text-white font-semibold text-2xl">Login</h1>
 
           <form onSubmit={submitHandler} className="flex flex-col items-center">
             <input
@@ -29,7 +29,7 @@ const Login = () => {
               required
               type="email"
               placeholder="enter your email"
-              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl outline-none bg-transparent placeholder:text-gray-100"
+              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl outline-none bg-transparent"
             />
 
             <input
@@ -40,10 +40,10 @@ const Login = () => {
               required
               type="password"
               placeholder="enter your password"
-              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl  outline-none bg-transparent placeholder:text-gray-300"
+              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl  outline-none bg-transparent"
             />
 
-            <button className=" bg-emerald-600 rounded-full p-3 m-3 text-xl text-gray-300 outline-none  placeholder:text-white">
+            <button className=" bg-emerald-600 rounded-full p-3 m-3 text-xl outline-none">
               Submit
             </button>
           </form>
