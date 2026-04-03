@@ -17,7 +17,12 @@ const AdminDashboard = () => {
        <h3>Description</h3>
        <input type="text" placeholder='Description' />
       
-      <textarea placeholder='text area' name="" id=""></textarea>
+      <textarea placeholder='text area' name="" id="" cols={30} rows={10}></textarea>
+
+
+      <h3>Date</h3>
+      <input type="date"/>
+      <input type="text"/>
 
       </form>
      </div>
