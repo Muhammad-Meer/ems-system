@@ -1,14 +1,14 @@
-@import "tailwindcss";
+ @import "tailwindcss";
 
-*{
+/* *{
   color: white;
-}
+} */
 
-body{
+/* body{
   background-color: black;
   color: azure;
-}
+} */
 
 #tasklist::-webkit-scrollbar{
   display: none;
-}
+} 
