@@ -8,8 +8,7 @@ import Tasklist from "../../Tasklist/TaskList";
 const EmployeeDashboard = () => {
   return (
     <>
-      <div className="p-10 bg-[#1c1c1c] h-screen ">
-        {/* EmployeeDashboard */}
+      <div className="p-10 bg-gray-600 h-screen ">
         <Headaer />
         <Tasklistnumber/>
         <Tasklist/>
