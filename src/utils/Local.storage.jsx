@@ -176,8 +176,10 @@ const admin = [{
 
 export   const  setLocalfunc = () => {
     localStorage.setItem("employees", JSON.stringify(employees))
+    localStorage.setItem("admin", JSON.stringify(admin))
 }
 
 export   const  getLocalfunc = () => {
-
+   localStorage.getItem("employees", JSON.stringify(employees))
+   localStorage.getItem("admin", JSON.stringify(admin))
 }
