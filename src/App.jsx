@@ -5,6 +5,8 @@ import './App.css'
 import Login from "./components/Auth/Login"
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/Dashboard/AdminDashboard";
+import { useContext } from 'react';
+import { AuthContext } from './context/AuthProvider';
 
 function App() {
 
@@ -12,11 +14,11 @@ function App() {
 
   const handelLogin = (email, password) => {
 
-    if (email === "admin@gmail.com" && password === "123") {
+    if (email === "admin1@example.com" && password === "123") {
       console.log("this is admin")
       setuser("admin")
     }
-    else if (email === "user@gmail.com" && password === "123") {
+    else if (email === "employee1@example.com" && password === "123") {
       console.log("this is user")
       setuser("user")
     }
@@ -24,6 +26,9 @@ function App() {
       alert("invalid Credentials")
     }
   }
+
+  const meerali = useContext(AuthContext)
+  console.log(meerali)
 
   return (
     <>
