@@ -1,19 +1,20 @@
 import { useState } from "react";
 
-const Login = () => {
+const Login = (handelLogin) => {
+  console.log(handelLogin);
+
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
-
-
+ 
 
   const submitHandler = (e) => {
     e.preventDefault();
-     console.log(email, password); 
+    console.log(handelLogin(email, password))
 
-
-    setemail("")
-    setpassword("")
+    setemail("");
+    setpassword("");
   };
+
   return (
     <>
       <div className="flex h-screen w-screen items-center justify-center p-25 bg-gray-900 text-white">
@@ -40,10 +41,10 @@ const Login = () => {
               required
               type="password"
               placeholder="enter your password"
-              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl  outline-none bg-transparent"
+              className="border-2 border-emerald-600 rounded-full p-3 m-3 text-xl outline-none bg-transparent"
             />
 
-            <button className=" bg-emerald-600 rounded-full p-3 m-3 text-xl outline-none">
+            <button className="bg-emerald-600 rounded-full p-3 m-3 text-xl outline-none">
               Submit
             </button>
           </form>
