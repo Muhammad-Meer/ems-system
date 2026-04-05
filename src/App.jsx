@@ -27,8 +27,7 @@ function App() {
     }
   }
 
-  const meerali = useContext(AuthContext)
-  console.log(meerali)
+  const data = useContext(AuthContext)
 
   return (
     <>
