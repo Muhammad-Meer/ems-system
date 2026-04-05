@@ -180,6 +180,9 @@ export   const  setLocalfunc = () => {
 }
 
 export   const  getLocalfunc = () => {
-   localStorage.getItem("employees", JSON.stringify(employees))
-   localStorage.getItem("admin", JSON.stringify(admin))
+    let employeesdata = JSON.parse(localStorage.getItem("employees"))
+     let admin = JSON.parse(localStorage.getItem("admin"))
+
+     return {employeesdata, admin}
+
 }
