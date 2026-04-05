@@ -7,9 +7,9 @@ export const AuthContext = createContext()
 
 
 
-const data = localStorage.getItem("user")
 const AuthProvider = ({ children }) => {
-
+const data = localStorage
+console.log(data.employeesdata)
 
   const [usedata, setdata] = useState(null)
 
