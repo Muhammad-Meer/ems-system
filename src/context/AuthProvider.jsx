@@ -1,17 +1,21 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
+import { getLocalfunc } from '../utils/Local.storage'
 
 
 export const AuthContext = createContext()
 
 
 
-
-
 const AuthProvider = ({ children }) => {
-const data = localStorage
-console.log(data.employeesdata)
 
   const [usedata, setdata] = useState(null)
+
+
+  // useEffect(() => {
+  //   usecall()
+  //   console.log(rerender)
+  // })
+
 
 
   return (

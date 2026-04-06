@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 
-// files
+files
 import Login from "./components/Auth/Login"
 import EmployeeDashboard from "./components/Dashboard/EmployeeDashboard";
 import AdminDashboard from "./components/Dashboard/AdminDashboard";
@@ -29,12 +30,18 @@ function App() {
 
   const data = useContext(AuthContext)
 
+
+
   return (
     <>
-      {!user && <Login handelLogin={handelLogin} />}
+      {!user && <Login handelLogin={handelLogin} name={name} />}
 
       {user === "admin" && <AdminDashboard />}
       {user === "user" && <EmployeeDashboard />}
+
+      <div>
+        <button onClick={usecall}>button</button>
+      </div>
     </>
   )
 }
