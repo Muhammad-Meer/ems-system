@@ -28,12 +28,13 @@ function App() {
   }
 
   const data = useContext(AuthContext)
+  console.log(data.employeesdata)
 
 
 
   return (
     <>
-      {!user && <Login handelLogin={handelLogin} name={name} />}
+      {!user && <Login handelLogin={handelLogin}  />}
 
       {user === "admin" && <AdminDashboard />}
       {user === "user" && <EmployeeDashboard />}
