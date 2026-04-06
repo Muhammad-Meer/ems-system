@@ -11,10 +11,10 @@ const AuthProvider = ({ children }) => {
   const [usedata, setdata] = useState(null)
 
 
-  // useEffect(() => {
-  //   usecall()
-  //   console.log(rerender)
-  // })
+  useEffect(() => {
+    const {employeesdata , admin} = getLocalfunc()
+    setdata({employeesdata, admin})
+  } ,[])
 
 
 
