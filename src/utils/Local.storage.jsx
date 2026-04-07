@@ -184,5 +184,4 @@ export   const  getLocalfunc = () => {
      let admin = JSON.parse(localStorage.getItem("admin"))
 
      return {employeesdata, admin}
-
 }

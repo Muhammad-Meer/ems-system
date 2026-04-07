@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 // files
@@ -12,14 +12,17 @@ function App() {
 
   const [user, setuser] = useState(null)
 
-  const handelLogin = (email, password) => {
+  const authdata = useContext(AuthContext)
+
+  useEffect(() => {
+
+  }, [])
+  const handleLogin = (email, password) => {
 
     if (email === "admin1@example.com" && password === "123") {
-      console.log("this is admin")
       setuser("admin")
     }
-    else if (email === "employee1@example.com" && password === "123") {
-      console.log("this is user")
+    else if (authdata.employeesdata.find((e) => email == e.email && password == e.password)) {
       setuser("user")
     }
     else {
@@ -27,14 +30,14 @@ function App() {
     }
   }
 
-  const authdata = useContext(AuthContext)
-  console.log(authdata.employeesdata)
+  // console.log(authdata.employeesdata)
+  console.log(authdata?.employeesdata)
 
 
 
   return (
     <>
-      {!user && <Login handelLogin={handelLogin}  />}
+      {!user && <Login handleLogin={handleLogin} />}
 
       {user === "admin" && <AdminDashboard />}
       {user === "user" && <EmployeeDashboard />}
