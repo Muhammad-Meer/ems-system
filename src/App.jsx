@@ -27,8 +27,8 @@ function App() {
     }
   }
 
-  const data = useContext(AuthContext)
-  console.log(data.employeesdata)
+  const authdata = useContext(AuthContext)
+  console.log(authdata.employeesdata)
 
 
 
