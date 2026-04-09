@@ -8,6 +8,11 @@ import AdminDashboard from "./components/Dashboard/AdminDashboard";
 import { useContext } from 'react';
 import { AuthContext } from './context/AuthProvider';
 
+
+
+
+
+
 function App() {
 
   const [user, setuser] = useState(null)
@@ -25,6 +30,9 @@ function App() {
       }
     }
   }, [authdata])
+
+
+
   const handleLogin = (email, password) => {
 
 
@@ -47,6 +55,8 @@ function App() {
 
 
 
+
+  
   return (
     <>
       {!user && <Login handleLogin={handleLogin} />}
